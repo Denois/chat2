@@ -88,9 +88,9 @@
 ```
 
 ## Документация
-[Введение](https://core.telegram.org/bots)
-[Telegram Bot API](https://core.telegram.org/bots/api)
-[Модуль request](https://www.npmjs.com/package/request)
+- [Введение](https://core.telegram.org/bots)
+- [Telegram Bot API](https://core.telegram.org/bots/api)
+- [Модуль request](https://www.npmjs.com/package/request)
 
 ## Пример бота
 ```
