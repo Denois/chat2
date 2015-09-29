@@ -88,9 +88,9 @@
 ```
 
 ## Документация
-- [Введение](https://core.telegram.org/bots)
-- [Telegram Bot API](https://core.telegram.org/bots/api)
-- [Модуль request](https://www.npmjs.com/package/request)
+- [Введение в Telegram Bots](https://core.telegram.org/bots) — общая информация о возможностях ботов
+- [Telegram Bot API](https://core.telegram.org/bots/api) — подробная документация по API
+- [Модуль request](https://www.npmjs.com/package/request) — для простого осуществления http-запросов
 
 ## Пример бота
 1. скачать файлы `index.js` и `package.json` в отдельную директорию;
