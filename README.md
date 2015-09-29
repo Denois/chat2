@@ -20,7 +20,7 @@
 - сохранить полученный токен
 
 ## Как начать получать сообщения ботом
-- адрес всех методов `https://api.telegram.org/bot<token>/METHOD_NAME`
+- адрес всех [методов](https://core.telegram.org/bots/api#available-methods) `https://api.telegram.org/bot<token>/METHOD_NAME`
 - передавать параметры в url или json (application/json)
 - ответ в json
 
