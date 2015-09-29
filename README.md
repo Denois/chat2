@@ -93,7 +93,7 @@
 - [Модуль request](https://www.npmjs.com/package/request) — для простого осуществления http-запросов
 
 ## Пример бота
-1. скачать файлы `index.js` и `package.json` в отдельную директорию;
+1. скачать файлы [`index.js`](https://gist.github.com/glukki/50ddfd6a99ee3fd634b1#file-index-js) и [`package.json`](https://gist.github.com/glukki/50ddfd6a99ee3fd634b1#file-package-json) в отдельную директорию;
 2. подставить в `index.js` токен своего бота в переменную `TOKEN`;
 3. в директории с файлами выполнить `npm install` (установит модули указанные в `package.json`);
 4. запустить бота командой `npm start` или `npm watch` (будет перезапускать бота при изменении кода).
