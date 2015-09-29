@@ -99,42 +99,43 @@
 4. запустить бота командой `npm start` или `npm watch` (будет перезапускать бота при изменении кода).
 
 # Некоторые источники данных
-## Погода по городу/координатам
+#### Погода по городу/координатам
 http://openweathermap.org/api
 ```
 http://api.openweathermap.org/data/2.5/weather?lat=59.955800&lon=30.328257
 ```
 
-## Последние твиты аккаунта
-https://dev.twitter.com/rest/reference/get/statuses/user_timeline
-
-## Город по координатам
+#### Город по координатам
 https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding
 ```
 https://maps.googleapis.com/maps/api/geocode/json?latlng=59.955800,30.328257
 ```
 
-## Часовой пояс по координатам
+#### Часовой пояс по координатам
 https://developers.google.com/maps/documentation/timezone/intro
 ```
 https://maps.googleapis.com/maps/api/timezone/json?location=59.955800,30.328257&timestamp=1443344339
 ```
 
-## Рандомная картинка с котиком
+#### Рандомная картинка с котиком
 http://random.cat
 ```
 http://random.cat/meow
 ```
 
-## Открытые issue github репозитория
+#### Открытые issue github репозитория
 https://developer.github.com/v3/issues/
 ```
 https://api.github.com/repos/nodeschool/spb/issues?sort=created&state=open
 ```
 
-## Ближайшие кафе к координатам
+#### Ближайшие кафе к координатам
 https://developers.google.com/places/web-service/search
 ```
 https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=59.955800,30.328257&radius=500&key=XXX
 ```
+
+#### Последние твиты аккаунта
+Требует регистрации  
+https://dev.twitter.com/rest/reference/get/statuses/user_timeline
 
