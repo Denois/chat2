@@ -93,60 +93,10 @@
 - [Модуль request](https://www.npmjs.com/package/request)
 
 ## Пример бота
-```
-"use strict";
-
-var request = require("request");
-
-var TOKEN = "";
-
-var baseRequest = request.defaults({
-	baseUrl: "https://api.telegram.org/bot" + TOKEN + "/"
-});
-
-var callMethod = function (method, params, cb) {
-	cb = cb || function () { };
-	baseRequest({ uri: method, qs: params }, function (error, response, body) {
-		cb(error, JSON.parse(body));
-	});
-};
-
-var getUpdatesOffset = 0;
-var getUpdates = function (cb) {
-	var params = { offset: getUpdatesOffset, timeout: 60 };
-	callMethod("getUpdates", params, function (error, data) {
-		if (data.result.length) {
-			getUpdatesOffset = data.result[data.result.length - 1].update_id + 1;
-		}
-		cb(error, data);
-	});
-}
-
-var logic = function (update) {
-	var message = update.message;
-	if (!message) {
-		return;
-	}
-	if (message.text === "ping") {
-		callMethod("sendMessage", { chat_id: message.chat.id, text: "pong" })
-	}
-}
-
-var runBot = function () {
-	getUpdates(function (error, data) {
-		if (!data.ok) {
-			return console.log(data);
-		}
-		data.result.map(logic);
-		runBot();
-	});
-};
-
-callMethod("getMe", {}, function (error, data) {
-	console.log(data);
-	runBot();
-});
-```
+1. скачать файлы `index.js` и `package.json` в отдельную директорию;
+2. подставить в `index.js` токен своего бота в переменную `TOKEN`;
+3. в директории с файлами выполнить `npm install` (установит модули указанные в `package.json`);
+4. запустить бота командой `npm start` или `npm watch` (будет перезапускать бота при изменении кода).
 
 # Некоторые источники данных
 ## Погода по городу/координатам
