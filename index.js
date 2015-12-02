@@ -2,7 +2,7 @@
 
 var request = require("request");
 
-var TOKEN = "токен вашего бота";
+var TOKEN = "87592177:AAE0HqJkmdhwRwWiz2SXk9N2sRzmR2MSRo0";
 
 var baseRequest = request.defaults({
     baseUrl: "https://api.telegram.org/bot" + TOKEN + "/"
